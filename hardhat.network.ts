@@ -22,6 +22,7 @@ if (alchemyUrl && process.env.FORK_ENABLED && mnemonic) {
     chainId: 1,
     forking: {
       url: alchemyUrl,
+      blockNumber: 12226812
     },
     accounts: {
       mnemonic,
@@ -57,10 +58,11 @@ if (mnemonic) {
   };
   networks.mumbai = {
     chainId: 80001,
-    url: 'https://rpc-mumbai.maticvigil.com',
+    url: 'https://rpc-mumbai.matic.today',
     accounts: {
       mnemonic,
     },
+    loggingEnabled: true,
   };
 }
 
